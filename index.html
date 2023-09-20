@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Place Your Bets!</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-</head>
-<body>
-  <h1>Dice Roll Bets</h1>
-  <form>
-    <input placeholder="place your bet.." type="text"/>
-    <button type="submit">Submit Bet</button>
-  </form>
-  <div class="dice" id="dice">&#9860;</div>
-  <button id="roll-button">Roll Dice</button>
-  <ul class="result"></ul>
-  <script src='script.js'></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Place Your Bets!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <h1>Dice Roll Bets</h1>
+    <form class="bet-form">
+      <label class="dropdown-label" for="numberDropdown">Place Your Bet:</label>
+      <select id="numberDropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </form>
+    <div class="dice" id="dice">&#9860;</div>
+    <button class="roll" id="roll-button">Roll Dice</button>
+    <ul class="result"></ul>
+    <script src="script.js"></script>
+  </body>
 </html>
