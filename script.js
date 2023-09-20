@@ -35,7 +35,6 @@ function playAgain() {
   playAgain.textContent = "Play Again?";
   ulEl.append(playAgain);
   playAgain.addEventListener("click", () => {
-    diceEl.classList.add("roll-animation");
     playAgain.remove();
     result.remove();
     animateDiceRoll();
